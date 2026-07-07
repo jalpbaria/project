@@ -566,6 +566,31 @@ const initialProgress: ProgressTrack[] = [
   }
 ];
 
+// Helper to sanitize and backfill User Profiles
+function sanitizeUser(user: any): UserProfile {
+  return {
+    id: user.id,
+    name: user.name || 'Anonymous User',
+    email: user.email || '',
+    avatar: user.avatar || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80',
+    bio: user.bio || '',
+    education: user.education || 'Self-taught practitioner',
+    experience: user.experience || 'Enthusiastic explorer',
+    languages: Array.isArray(user.languages) ? user.languages : ['English'],
+    availability: Array.isArray(user.availability) ? user.availability : ['Morning', 'Afternoon'],
+    skillLevel: user.skillLevel || 'Intermediate',
+    portfolio: user.portfolio || {},
+    skillsOffered: Array.isArray(user.skillsOffered) ? user.skillsOffered : [],
+    skillsWanted: Array.isArray(user.skillsWanted) ? user.skillsWanted : [],
+    rating: typeof user.rating === 'number' ? user.rating : 5.0,
+    reviewsCount: typeof user.reviewsCount === 'number' ? user.reviewsCount : 0,
+    successfulExchanges: typeof user.successfulExchanges === 'number' ? user.successfulExchanges : 0,
+    credits: typeof user.credits === 'number' ? user.credits : 5,
+    timeZone: user.timeZone || 'EST',
+    badges: Array.isArray(user.badges) ? user.badges : []
+  };
+}
+
 // Helper to Load & Save DB State
 function loadDB(): DBState {
   try {
@@ -573,12 +598,24 @@ function loadDB(): DBState {
       const data = fs.readFileSync(DB_FILE_PATH, 'utf-8');
       const parsed = JSON.parse(data) as DBState;
       
-      // Auto-merge newly added swappers if they don't exist in saved DB
+      // Sanitizing loaded users
       let updated = false;
+      if (parsed && Array.isArray(parsed.users)) {
+        const originalStr = JSON.stringify(parsed.users);
+        parsed.users = parsed.users.map(sanitizeUser);
+        if (JSON.stringify(parsed.users) !== originalStr) {
+          updated = true;
+        }
+      } else if (parsed) {
+        parsed.users = [];
+        updated = true;
+      }
+      
+      // Auto-merge newly added swappers if they don't exist in saved DB
       if (parsed && Array.isArray(parsed.users)) {
         initialUsers.forEach(initUser => {
           if (!parsed.users.some(u => u.id === initUser.id)) {
-            parsed.users.push(initUser);
+            parsed.users.push(sanitizeUser(initUser));
             updated = true;
           }
         });
@@ -596,7 +633,7 @@ function loadDB(): DBState {
 
   // Seeding default database
   const defaultDB: DBState = {
-    users: initialUsers,
+    users: initialUsers.map(sanitizeUser),
     bookings: initialBookings,
     messages: initialMessages,
     reviews: initialReviews,
@@ -715,23 +752,23 @@ app.post('/api/users', (req, res) => {
   const index = db.users.findIndex(u => u.id === profileData.id);
   if (index >= 0) {
     // Preserve dynamic statistics
-    db.users[index] = {
+    db.users[index] = sanitizeUser({
       ...db.users[index],
       ...profileData,
       id: profileData.id // safeguard
-    };
+    });
     saveDB(db);
     res.json(db.users[index]);
   } else {
     // Initialize stats for a new user
-    const newUser: UserProfile = {
+    const newUser: UserProfile = sanitizeUser({
       ...profileData,
       rating: 5.0,
       reviewsCount: 0,
       successfulExchanges: 0,
       credits: 5,
       badges: []
-    };
+    });
     db.users.push(newUser);
     saveDB(db);
     res.json(newUser);

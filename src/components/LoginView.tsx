@@ -167,10 +167,20 @@ export default function LoginView({ onLogin, onRegister, allUsers }: LoginViewPr
     try {
       const response = await fetch(`/api/auth/google/url?origin=${encodeURIComponent(window.location.origin)}`);
       if (!response.ok) {
-        const errData = await response.json();
-        throw new Error(errData.error || 'Failed to generate Google Sign In URL.');
+        let errorMsg = 'Failed to generate Google Sign In URL.';
+        try {
+          const errData = await response.json();
+          errorMsg = errData.error || errorMsg;
+        } catch {}
+        throw new Error(errorMsg);
       }
-      const { url } = await response.json();
+      let urlData;
+      try {
+        urlData = await response.json();
+      } catch (e: any) {
+        throw new Error('Invalid JSON response received from authentication service.');
+      }
+      const { url } = urlData;
       const authWindow = window.open(url, 'google_oauth_popup', 'width=500,height=600');
       if (!authWindow) {
         setLoginError('Popup blocker active. Please enable popups to sign in with Google.');

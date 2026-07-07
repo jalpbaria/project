@@ -92,8 +92,19 @@ export default function App() {
         setIsLoading(false);
         return { success: true };
       } else {
-        const errData = await res.json();
-        return { success: false, error: errData.error || 'Failed to register account.' };
+        let errorMsg = 'Failed to register account.';
+        try {
+          const errData = await res.json();
+          errorMsg = errData.error || errorMsg;
+        } catch {
+          try {
+            const rawText = await res.text();
+            if (rawText && rawText.trim()) {
+              errorMsg = rawText.length > 100 ? `${rawText.substring(0, 97)}...` : rawText;
+            }
+          } catch {}
+        }
+        return { success: false, error: errorMsg };
       }
     } catch (err: any) {
       console.error('Error registering:', err);
@@ -168,8 +179,12 @@ export default function App() {
       });
       
       if (!res.ok) {
-        const err = await res.json();
-        alert(err.error || 'Failed to book session');
+        let errorMsg = 'Failed to book session';
+        try {
+          const err = await res.json();
+          errorMsg = err.error || errorMsg;
+        } catch {}
+        alert(errorMsg);
         return;
       }
 

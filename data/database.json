@@ -1,0 +1,778 @@
+{
+  "users": [
+    {
+      "id": "user-alex",
+      "name": "Alex Rivera",
+      "email": "alex.rivera@example.com",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Full Stack Engineer with 5+ years of experience. Love teaching React and Python while learning design and languages.",
+      "education": "B.S. in Computer Science, UC Berkeley",
+      "experience": "Senior Developer at TechCorp, former Frontend engineer at StartupX",
+      "languages": [
+        "English",
+        "Spanish (Intermediate)"
+      ],
+      "availability": [
+        "Afternoon",
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "Python Programming",
+          "category": "Programming",
+          "level": "Expert"
+        },
+        {
+          "name": "React Frontend Development",
+          "category": "Programming",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Spanish Conversation",
+          "category": "Language Learning",
+          "level": "Beginner"
+        },
+        {
+          "name": "UI/UX Design",
+          "category": "Graphic Design",
+          "level": "Intermediate"
+        }
+      ],
+      "rating": 4.9,
+      "reviewsCount": 18,
+      "successfulExchanges": 24,
+      "credits": 5,
+      "timeZone": "EST",
+      "badges": [
+        {
+          "id": "b1",
+          "name": "Master Teacher",
+          "icon": "Award",
+          "description": "Taught over 15 highly rated sessions",
+          "dateEarned": "2026-05-15"
+        },
+        {
+          "id": "b2",
+          "name": "Code Ninja",
+          "icon": "Cpu",
+          "description": "Completed 10 programming exchanges",
+          "dateEarned": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "id": "user-sofia",
+      "name": "Sofia Chen",
+      "email": "sofia.chen@example.com",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Lead Graphic Designer specializing in brand identity and mobile app interfaces. Keen to learn Python for automation.",
+      "education": "B.F.A in Graphic Design, Rhode Island School of Design",
+      "experience": "Lead Designer at StudioCreative, former UI Designer at MobileFirst",
+      "languages": [
+        "English",
+        "Mandarin (Native)"
+      ],
+      "availability": [
+        "Morning",
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "behance": "https://behance.net",
+        "linkedin": "https://linkedin.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "Figma UI/UX Design",
+          "category": "Graphic Design",
+          "level": "Expert"
+        },
+        {
+          "name": "Brand Identity",
+          "category": "Graphic Design",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Python Programming",
+          "category": "Programming",
+          "level": "Beginner"
+        },
+        {
+          "name": "Sourdough Baking",
+          "category": "Cooking",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.8,
+      "reviewsCount": 14,
+      "successfulExchanges": 19,
+      "credits": 4,
+      "timeZone": "PST",
+      "badges": [
+        {
+          "id": "b3",
+          "name": "Pixel Perfect",
+          "icon": "Palette",
+          "description": "Gave amazing UI feedback in 10 sessions",
+          "dateEarned": "2026-04-10"
+        }
+      ]
+    },
+    {
+      "id": "user-marcus",
+      "name": "Marcus Vance",
+      "email": "marcus.vance@example.com",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Professional video editor and motion graphic artist. Content creator with 100k+ subscribers.",
+      "education": "B.A. in Film and Digital Media, NYU",
+      "experience": "Video Producer at MediaHouse, freelance YouTuber",
+      "languages": [
+        "English"
+      ],
+      "availability": [
+        "Morning",
+        "Afternoon"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "behance": "https://behance.net",
+        "portfolioUrl": "https://youtube.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "Adobe Premiere Editing",
+          "category": "Video Editing",
+          "level": "Expert"
+        },
+        {
+          "name": "After Effects Animation",
+          "category": "Video Editing",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "SEO & Copywriting",
+          "category": "Digital Marketing",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Public Speaking",
+          "category": "Public Speaking",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.7,
+      "reviewsCount": 11,
+      "successfulExchanges": 15,
+      "credits": 6,
+      "timeZone": "GMT",
+      "badges": [
+        {
+          "id": "b4",
+          "name": "Director Eye",
+          "icon": "Film",
+          "description": "Edited over 10 project sessions",
+          "dateEarned": "2026-03-20"
+        }
+      ]
+    },
+    {
+      "id": "user-elena",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@example.com",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Language instructor and translator. Passionate about music, linguistics, and exploring local cuisines.",
+      "education": "M.A. in Applied Linguistics, Moscow State University",
+      "experience": "Language Specialist at LinguaSchool, Online Coach for 4+ years",
+      "languages": [
+        "Russian (Native)",
+        "English (Fluent)",
+        "French (Intermediate)"
+      ],
+      "availability": [
+        "Morning",
+        "Afternoon",
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "linkedin": "https://linkedin.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "Russian Language",
+          "category": "Language Learning",
+          "level": "Expert"
+        },
+        {
+          "name": "French Conversation",
+          "category": "Language Learning",
+          "level": "Intermediate"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Figma UI/UX Design",
+          "category": "Graphic Design",
+          "level": "Beginner"
+        },
+        {
+          "name": "Acoustic Guitar",
+          "category": "Music",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 5,
+      "reviewsCount": 22,
+      "successfulExchanges": 30,
+      "credits": 8,
+      "timeZone": "CET",
+      "badges": [
+        {
+          "id": "b5",
+          "name": "Polyglot",
+          "icon": "Languages",
+          "description": "Taught classes in multiple languages",
+          "dateEarned": "2026-02-12"
+        },
+        {
+          "id": "b6",
+          "name": "Five-Star Legend",
+          "icon": "Sparkles",
+          "description": "Maintained a perfect 5.0 rating over 20+ reviews",
+          "dateEarned": "2026-05-30"
+        }
+      ]
+    },
+    {
+      "id": "user-david",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Business consultant and public speaker. Helping entrepreneurs pitch their ideas successfully to investors.",
+      "education": "MBA, Harvard Business School",
+      "experience": "Partner at MillerConsulting, ex-Venture Capital Analyst",
+      "languages": [
+        "English"
+      ],
+      "availability": [
+        "Afternoon",
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "linkedin": "https://linkedin.com",
+        "portfolioUrl": "https://davidmiller.consulting"
+      },
+      "skillsOffered": [
+        {
+          "name": "Investor Pitching",
+          "category": "Business",
+          "level": "Expert"
+        },
+        {
+          "name": "Public Speaking Essentials",
+          "category": "Public Speaking",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Landscape Photography",
+          "category": "Photography",
+          "level": "Beginner"
+        },
+        {
+          "name": "Calisthenics Training",
+          "category": "Fitness",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.6,
+      "reviewsCount": 9,
+      "successfulExchanges": 12,
+      "credits": 3,
+      "timeZone": "CST",
+      "badges": [
+        {
+          "id": "b7",
+          "name": "Keynote Master",
+          "icon": "MessageSquare",
+          "description": "Taught 5 successful public speaking sessions",
+          "dateEarned": "2026-01-18"
+        }
+      ]
+    },
+    {
+      "id": "user-maya",
+      "name": "Maya Patel",
+      "email": "maya.patel@example.com",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Professional culinary chef and artisan baker. I demystify complex gourmet cooking for beginners!",
+      "education": "Le Cordon Bleu, Paris",
+      "experience": "Head Pastry Chef at BistroLeGourmet, Private Culinary Instructor",
+      "languages": [
+        "English",
+        "Hindi (Native)"
+      ],
+      "availability": [
+        "Morning",
+        "Afternoon"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "linkedin": "https://linkedin.com",
+        "behance": "https://behance.net"
+      },
+      "skillsOffered": [
+        {
+          "name": "Gourmet French Cooking",
+          "category": "Cooking",
+          "level": "Expert"
+        },
+        {
+          "name": "Sourdough Baking",
+          "category": "Cooking",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Adobe Premiere Editing",
+          "category": "Video Editing",
+          "level": "Beginner"
+        },
+        {
+          "name": "SEO & Copywriting",
+          "category": "Digital Marketing",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.9,
+      "reviewsCount": 16,
+      "successfulExchanges": 21,
+      "credits": 7,
+      "timeZone": "IST",
+      "badges": [
+        {
+          "id": "b8",
+          "name": "Michelin Mentor",
+          "icon": "Flame",
+          "description": "Guided 15 students through complex recipes",
+          "dateEarned": "2026-04-22"
+        }
+      ]
+    },
+    {
+      "id": "user-liam",
+      "name": "Liam Connor",
+      "email": "liam.connor@example.com",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Professional singer-songwriter and acoustic guitarist. Let me teach you how to play your favorite songs and understand basic music theory, from fingerpicking to open tunings!",
+      "education": "B.M. in Guitar Performance, Berklee College of Music",
+      "experience": "Guitar Instructor at Boston Music Academy, touring solo acoustic artist",
+      "languages": [
+        "English"
+      ],
+      "availability": [
+        "Afternoon",
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "linkedin": "https://linkedin.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "Acoustic Guitar Basics",
+          "category": "Music",
+          "level": "Expert"
+        },
+        {
+          "name": "Songwriting & Chord Theory",
+          "category": "Music",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "French Conversation",
+          "category": "Language Learning",
+          "level": "Beginner"
+        },
+        {
+          "name": "Sourdough Baking",
+          "category": "Cooking",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.9,
+      "reviewsCount": 15,
+      "successfulExchanges": 20,
+      "credits": 4,
+      "timeZone": "EST",
+      "badges": [
+        {
+          "id": "b-liam-1",
+          "name": "Melody Maker",
+          "icon": "Music",
+          "description": "Taught 10+ acoustic guitar sessions with stellar feedback",
+          "dateEarned": "2026-04-12"
+        }
+      ]
+    },
+    {
+      "id": "user-yuki",
+      "name": "Yuki Tanaka",
+      "email": "yuki.tanaka@example.com",
+      "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Award-winning travel and landscape photographer. I can teach you the rules of composition, camera settings, manual shooting, and post-processing in Lightroom!",
+      "education": "B.A. in Photography, Tokyo University of the Arts",
+      "experience": "Freelance editorial photographer for travel magazines, Lightroom workshop leader",
+      "languages": [
+        "Japanese (Native)",
+        "English (Fluent)"
+      ],
+      "availability": [
+        "Morning",
+        "Afternoon"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "behance": "https://behance.net",
+        "portfolioUrl": "https://yukitanaka.photography"
+      },
+      "skillsOffered": [
+        {
+          "name": "Landscape Photography",
+          "category": "Photography",
+          "level": "Expert"
+        },
+        {
+          "name": "Lightroom Post-Processing",
+          "category": "Photography",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "React Frontend Development",
+          "category": "Programming",
+          "level": "Beginner"
+        },
+        {
+          "name": "Investor Pitching",
+          "category": "Business",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.8,
+      "reviewsCount": 12,
+      "successfulExchanges": 17,
+      "credits": 6,
+      "timeZone": "JST",
+      "badges": [
+        {
+          "id": "b-yuki-1",
+          "name": "Golden Hour",
+          "icon": "Camera",
+          "description": "Conducted 8 successful outdoor photography sessions",
+          "dateEarned": "2026-03-05"
+        }
+      ]
+    },
+    {
+      "id": "user-zara",
+      "name": "Zara Al-Farsi",
+      "email": "zara.alfarsi@example.com",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Digital marketing strategist and senior copywriter. Expert in keyword research, SEO strategy, and writing high-converting landing pages.",
+      "education": "B.A. in English & Communications, McGill University",
+      "experience": "Senior Content Strategist at GrowthMarketers, Freelance Copywriter",
+      "languages": [
+        "Arabic (Native)",
+        "English (Fluent)",
+        "French (Intermediate)"
+      ],
+      "availability": [
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "linkedin": "https://linkedin.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "SEO & Copywriting",
+          "category": "Digital Marketing",
+          "level": "Expert"
+        },
+        {
+          "name": "Email Marketing Strategy",
+          "category": "Digital Marketing",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Calisthenics Training",
+          "category": "Fitness",
+          "level": "Beginner"
+        },
+        {
+          "name": "Adobe Premiere Editing",
+          "category": "Video Editing",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 4.9,
+      "reviewsCount": 8,
+      "successfulExchanges": 11,
+      "credits": 5,
+      "timeZone": "AST",
+      "badges": [
+        {
+          "id": "b-zara-1",
+          "name": "Word Smith",
+          "icon": "PenTool",
+          "description": "Improved copy quality in 5 community websites",
+          "dateEarned": "2026-05-18"
+        }
+      ]
+    },
+    {
+      "id": "user-tyler",
+      "name": "Tyler Vance",
+      "email": "tyler.vance@example.com",
+      "avatar": "https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Certified personal trainer and calisthenics coach. Specializing in bodyweight fitness, mobility, and progressive strength overload for all levels!",
+      "education": "B.S. in Kinesiology, Penn State University",
+      "experience": "Head Trainer at IronBody Gym, creator of the Calisthenics Core method",
+      "languages": [
+        "English"
+      ],
+      "availability": [
+        "Morning",
+        "Evening"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {
+        "linkedin": "https://linkedin.com"
+      },
+      "skillsOffered": [
+        {
+          "name": "Calisthenics Training",
+          "category": "Fitness",
+          "level": "Expert"
+        },
+        {
+          "name": "Mobility & Flexibility Coaching",
+          "category": "Fitness",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "Public Speaking Essentials",
+          "category": "Public Speaking",
+          "level": "Beginner"
+        },
+        {
+          "name": "After Effects Animation",
+          "category": "Video Editing",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 5,
+      "reviewsCount": 16,
+      "successfulExchanges": 22,
+      "credits": 3,
+      "timeZone": "EST",
+      "badges": [
+        {
+          "id": "b-tyler-1",
+          "name": "Iron Coach",
+          "icon": "Dumbbell",
+          "description": "Led 15 highly active fitness exchanges",
+          "dateEarned": "2026-02-14"
+        }
+      ]
+    },
+    {
+      "id": "test-user-1",
+      "name": "Test User",
+      "email": "test@example.com",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "Hello world this is a test bio",
+      "education": "Self-taught practitioner",
+      "experience": "Enthusiastic explorer",
+      "languages": [
+        "English"
+      ],
+      "availability": [
+        "Morning",
+        "Afternoon"
+      ],
+      "skillLevel": "Intermediate",
+      "portfolio": {},
+      "skillsOffered": [],
+      "skillsWanted": [],
+      "rating": 5,
+      "reviewsCount": 0,
+      "successfulExchanges": 0,
+      "credits": 5,
+      "timeZone": "EST",
+      "badges": []
+    },
+    {
+      "id": "user-1783413222941",
+      "name": "lilegfphef",
+      "email": "jalp261326@gmail.com",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+      "bio": "rgszeeesgaseg",
+      "education": "Self-taught practitioner",
+      "experience": "Enthusiastic explorer",
+      "languages": [
+        "English"
+      ],
+      "availability": [
+        "Morning",
+        "Afternoon"
+      ],
+      "skillLevel": "Expert",
+      "portfolio": {},
+      "skillsOffered": [
+        {
+          "name": "egsz",
+          "category": "Programming",
+          "level": "Expert"
+        }
+      ],
+      "skillsWanted": [
+        {
+          "name": "esz",
+          "category": "Language Learning",
+          "level": "Beginner"
+        }
+      ],
+      "rating": 5,
+      "reviewsCount": 0,
+      "successfulExchanges": 0,
+      "credits": 5,
+      "timeZone": "EST",
+      "badges": []
+    }
+  ],
+  "bookings": [
+    {
+      "id": "booking-1",
+      "teacherId": "user-sofia",
+      "teacherName": "Sofia Chen",
+      "learnerId": "user-alex",
+      "learnerName": "Alex Rivera",
+      "skillName": "Figma UI/UX Design",
+      "category": "Graphic Design",
+      "learningOption": "Live 1-on-1 Session",
+      "date": "2026-07-05",
+      "timeSlot": "Evening",
+      "status": "confirmed",
+      "notes": "Please review my draft landing page design and give me layout tips!",
+      "createdAt": "2026-07-02T10:30:00Z"
+    },
+    {
+      "id": "booking-2",
+      "teacherId": "user-alex",
+      "teacherName": "Alex Rivera",
+      "learnerId": "user-sofia",
+      "learnerName": "Sofia Chen",
+      "skillName": "Python Programming",
+      "category": "Programming",
+      "learningOption": "Project-Based Learning",
+      "date": "2026-07-06",
+      "timeSlot": "Morning",
+      "status": "pending",
+      "notes": "I want to build a simple script to automate renaming files in my Figma asset folders.",
+      "createdAt": "2026-07-03T08:15:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "senderId": "user-alex",
+      "receiverId": "user-sofia",
+      "text": "Hi Sofia! I requested a session to learn Figma layouts. Looking forward to it!",
+      "timestamp": "2026-07-02T10:31:00Z"
+    },
+    {
+      "id": "m2",
+      "senderId": "user-sofia",
+      "receiverId": "user-alex",
+      "text": "Hi Alex! I just accepted your booking. I would be happy to review your landing page. Can you bring a Figma link or share your screen?",
+      "timestamp": "2026-07-02T12:05:00Z"
+    },
+    {
+      "id": "m3",
+      "senderId": "user-alex",
+      "receiverId": "user-sofia",
+      "text": "Yes! I will have the screen ready. See you on Sunday.",
+      "timestamp": "2026-07-02T12:15:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "bookingId": "past-booking-1",
+      "teacherId": "user-alex",
+      "learnerId": "user-elena",
+      "learnerName": "Elena Rostova",
+      "rating": 5,
+      "teachingQuality": 5,
+      "communication": 5,
+      "helpfulness": 5,
+      "punctuality": 5,
+      "comment": "Alex explained React hooks so well! In just one hour, I understood useEffect and useState. Thank you so much!",
+      "createdAt": "2026-06-25T14:20:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "userId": "user-alex",
+      "title": "Booking Confirmed!",
+      "message": "Sofia Chen accepted your booking for Figma UI/UX Design on 2026-07-05.",
+      "type": "upcoming",
+      "read": false,
+      "timestamp": "2026-07-02T12:05:00Z"
+    },
+    {
+      "id": "n2",
+      "userId": "user-sofia",
+      "title": "New Booking Request",
+      "message": "Alex Rivera requested a Python session on 2026-07-06.",
+      "type": "request",
+      "read": false,
+      "timestamp": "2026-07-03T08:15:00Z"
+    }
+  ],
+  "progress": [
+    {
+      "userId": "user-alex",
+      "skillName": "Figma UI/UX Design",
+      "lessonsTotal": 5,
+      "lessonsCompleted": 1,
+      "completionPercentage": 20,
+      "badgesEarned": [],
+      "lastActive": "2026-07-02T12:15:00Z"
+    }
+  ]
+}
