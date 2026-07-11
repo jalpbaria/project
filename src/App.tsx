@@ -94,15 +94,17 @@ export default function App() {
       } else {
         let errorMsg = 'Failed to register account.';
         try {
-          const errData = await res.json();
-          errorMsg = errData.error || errorMsg;
-        } catch {
+          const rawText = await res.text();
           try {
-            const rawText = await res.text();
+            const errData = JSON.parse(rawText);
+            errorMsg = errData.error || errorMsg;
+          } catch {
             if (rawText && rawText.trim()) {
-              errorMsg = rawText.length > 100 ? `${rawText.substring(0, 97)}...` : rawText;
+              errorMsg = rawText.length > 100 ? `${rawText.substring(0, 97)}...` : rawText.trim();
             }
-          } catch {}
+          }
+        } catch (err) {
+          console.error('Error reading registration response:', err);
         }
         return { success: false, error: errorMsg };
       }
