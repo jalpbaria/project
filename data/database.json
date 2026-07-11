@@ -607,44 +607,6 @@
           "dateEarned": "2026-02-14"
         }
       ]
-    },
-    {
-      "id": "user-1783413222941",
-      "name": "lilegfphef",
-      "email": "jalp261326@gmail.com",
-      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
-      "bio": "rgszeeesgaseg",
-      "education": "Self-taught practitioner",
-      "experience": "Enthusiastic explorer",
-      "languages": [
-        "English"
-      ],
-      "availability": [
-        "Morning",
-        "Afternoon"
-      ],
-      "skillLevel": "Expert",
-      "portfolio": {},
-      "skillsOffered": [
-        {
-          "name": "egsz",
-          "category": "Programming",
-          "level": "Expert"
-        }
-      ],
-      "skillsWanted": [
-        {
-          "name": "esz",
-          "category": "Language Learning",
-          "level": "Beginner"
-        }
-      ],
-      "rating": 5,
-      "reviewsCount": 0,
-      "successfulExchanges": 0,
-      "credits": 5,
-      "timeZone": "EST",
-      "badges": []
     }
   ],
   "bookings": [
