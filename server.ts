@@ -112,7 +112,9 @@ io.on('connection', (socket) => {
     }
   });
 });
-const DB_FILE_PATH = path.join(process.cwd(), 'data', 'database.json');
+const DB_FILE_PATH = process.env.VERCEL
+  ? path.join('/tmp', 'database.json')
+  : path.join(process.cwd(), 'data', 'database.json');
 
 app.use(express.json());
 
@@ -132,9 +134,11 @@ if (process.env.GEMINI_API_KEY) {
 }
 
 // Ensure the data directory exists
-const dataDir = path.join(process.cwd(), 'data');
-if (!fs.existsSync(dataDir)) {
-  fs.mkdirSync(dataDir, { recursive: true });
+if (!process.env.VERCEL) {
+  const dataDir = path.join(process.cwd(), 'data');
+  if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+  }
 }
 
 // Seed Data
@@ -594,6 +598,14 @@ function sanitizeUser(user: any): UserProfile {
 // Helper to Load & Save DB State
 function loadDB(): DBState {
   try {
+    if (process.env.VERCEL && !fs.existsSync(DB_FILE_PATH)) {
+      const seededPath = path.join(process.cwd(), 'data', 'database.json');
+      if (fs.existsSync(seededPath)) {
+        const seededData = fs.readFileSync(seededPath, 'utf-8');
+        fs.writeFileSync(DB_FILE_PATH, seededData);
+      }
+    }
+
     if (fs.existsSync(DB_FILE_PATH)) {
       const data = fs.readFileSync(DB_FILE_PATH, 'utf-8');
       const parsed = JSON.parse(data) as DBState;
@@ -1782,4 +1794,8 @@ async function startServer() {
   });
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
